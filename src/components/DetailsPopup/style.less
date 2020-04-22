@@ -1,0 +1,112 @@
+.detailsPopup{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	-webkit-overflow-scrolling: touch;
+  transform: translate3d(0, 100%, 0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  transition: 200ms ease-out;
+  will-change: bottom;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+	.pullIcon{
+		position: absolute;
+		top: 6px;
+		left: 50%;
+		width: 25px;
+		height: 4px;
+		border-radius: 5px;
+		background: #eee;
+		margin-left: -10px;
+	}
+	.detailsMain{
+		width: 100%;
+		height: 100%;
+		.primary,.info{
+			padding: 0 10px 0 10px;
+		}
+		.active{
+			display: none;
+		}
+		h3.title{
+			font-size: 18px;
+			line-height: 36px;
+			padding-top: 14px;
+			color: #333;
+			font-weight: bold;
+			margin-bottom: 4px;
+			text-indent: 10px;
+		}
+		.location{
+			display: flex;
+			align-items: center;
+			font-size: 14px;
+			line-height: 14px;
+			color: #333;
+			margin-bottom: 8px;
+			span{
+				padding-right: 6px;
+				margin-right: 6px;
+				border-right: 1px solid #ddd;
+			}
+		}
+		.level,.time{
+			font-size: 14px;
+			color: #333;
+			margin-bottom: 8px;
+		}
+		.details{
+			width: 100%;
+			height: 100%;
+			.info{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				margin-bottom: 8px;
+				li{
+					width: 50%;
+					height: 24px;
+					display: flex;
+					align-items: center;
+					color: #333;
+					font-size: 14px;
+				}
+			}
+			canvas{
+				width: 375px;
+				height: calc((100% - 170px) / 2);
+			}
+			.grayBar{
+				width: 100%;
+				height: 10px;
+				background: #f7f7f7;
+			}
+			.detailsList{
+				width: 100%;
+				height: calc((100% - 170px) / 2);
+				overflow-y: scroll;
+				-webkit-overflow-scrolling: touch;
+				overflow-scrolling: touch;
+				display: flex;
+				flex-direction: column;
+				li{
+					width: 100%;
+					padding-left: 16px;
+					section{
+						height: 26px;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						font-size: 14px;
+						color: #666;
+						padding: 0 16px 0 4px;
+					}
+				}
+			}
+		}
+	}
+}

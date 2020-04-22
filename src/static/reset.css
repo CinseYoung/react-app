@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,input,textarea{margin: 0; -webkit-text-size-adjust: 100%; font-family: "Helvetica Neue",Helvetica, "Microsoft Yahei", sans-serif; font-weight: normal;}
+ul,ol,li{margin: 0; padding: 0; list-style: none;}
+img{display: block;}
+a {text-decoration: none;}
+em,i{font-style: normal;}
+a,input,button,textarea{-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-appearance: none; outline: none;}
+html,body{width: 100%; height: 100%; position: relative; overflow: hidden;}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0 1000px white inset !important;}
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#root{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	/*overflow: auto;*/
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+#map{
+	width: 100%;
+	height: 100%;
+}
+#exitApp{
+	position: fixed;
+	bottom: 16%;
+	left: 50%;
+	width: 150px;
+	height: 44px;
+	margin-left: -75px;
+	text-align: center;
+	line-height: 44px;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	border-radius: 6px;
+	display: none;
+}
+/********* Loading **********/
+#ajaxLoading{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	display: none;
+}
+#ajaxLoadingMain{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#ajaxLoadingMain p{
+	color: #5490ff;
+	font-size: 14px;
+	margin-top: 10px;
+}
+@-webkit-keyframes line-scale-pulse-out {
+	0% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+	50% {
+		-webkit-transform: scaley(0.4);
+		transform: scaley(0.4);
+	}
+	100% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+}
+@keyframes line-scale-pulse-out {
+	0% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+	50% {
+		-webkit-transform: scaley(0.4);
+		transform: scaley(0.4);
+	}
+	100% {
+		-webkit-transform: scaley(1);
+		transform: scaley(1);
+	}
+}
+.line-scale-pulse-out>div {
+	background-color: #5490ff;
+	width: 4px;
+	height: 30px;
+	border-radius: 4px;
+	margin: 2px;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	display: inline-block;
+	-webkit-animation: line-scale-pulse-out 0.9s 0s infinite cubic-bezier(.85, .25, .37, .85);
+	animation: line-scale-pulse-out 0.9s 0s infinite cubic-bezier(.85, .25, .37, .85);
+}
+.line-scale-pulse-out>div:nth-child(2), .line-scale-pulse-out>div:nth-child(4) {
+	-webkit-animation-delay: 0.2s !important;
+	animation-delay: 0.2s !important;
+}
+.line-scale-pulse-out>div:nth-child(1), .line-scale-pulse-out>div:nth-child(5) {
+	-webkit-animation-delay: 0.4s !important;
+	animation-delay: 0.4s !important;
+}
+/********* Loading **********/
+
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	/* iPhone X 独有样式写在这里*/
+}
+
+.amap-copyright,.amap-logo{
+	display: none !important;
+}
+
+.transitionGroup,.appAppear-enter-done{
+	width: 100%;
+	height: 100%;
+	transform: translateZ(0);
+}
+/* 路由动画 */
+.animated-router {
+	/** START: 自定义进出场动画 **/
+	/** END **/
+}
+.animated-router-container {
+	/* 动画容器节点 */
+	transform: translateZ(0);
+	position: fixed;
+	will-change: transform;
+	backface-visibility: hidden;
+	perspective: 1000;
+}
+.animated-router-in-transition {
+	/* 页面动画中 */
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	transform: translateZ(0);
+}
+.animated-router-forward-enter {
+	/* transform: translate(100%); */
+	transform: translate3d(100%, 0, 0);
+	will-change: transform;
+}
+.animated-router-forward-enter-active {
+	/* transform: translate(0); */
+	transform: translate3d(0, 0, 0);
+	will-change: transform;
+}
+.animated-router-forward-exit {
+	/* transform: translate(0); */
+	transform: translate3d(0, 0, 0);
+	will-change: transform;
+}
+.animated-router-forward-exit-active {
+	/* transform: translate(-100%); */
+	transform: translate3d(-100%, 0, 0);
+	will-change: transform;
+}
+.animated-router-backward-enter {
+	/* transform: translate(-100%); */
+	transform: translate3d(-100%, 0, 0);
+	will-change: transform;
+}
+.animated-router-backward-enter-active {
+	/* transform: translate(0); */
+	transform: translate3d(0, 0, 0);
+	will-change: transform;
+}
+.animated-router-backward-exit {
+	/* transform: translate(0); */
+	transform: translate3d(0, 0, 0);
+	will-change: transform;
+}
+.animated-router-backward-exit-active {
+	/* transform: translate(100%); */
+	transform: translate3d(100%, 0, 0);
+	will-change: transform;
+}
+.animated-router-forward-enter-active, .animated-router-forward-exit-active, .animated-router-backward-enter-active, .animated-router-backward-exit-active {
+	/* 不同过渡阶段需要的过渡时间与缓动效果 */
+	transition: 300ms ease-out;
+	backface-visibility: hidden;
+	perspective: 1000;
+}
+.animated-router-forward-exit, .animated-router-backward-exit {
+	position: absolute !important;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.am-tabs-horizontal .am-tabs-pane-wrap-inactive {
+	height: 100%;
+	overflow: visible;
+}
+
+.am-activity-indicator-spinner,.am-icon-loading{
+	animation: spinner-anime 1s linear infinite;
+	-webkit-animation: spinner-anime 1s linear infinite;
+}
+@-webkit-keyframes spinner-anime {
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+
+@keyframes spinner-anime {
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}

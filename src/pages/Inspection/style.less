@@ -1,0 +1,116 @@
+.inspection{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #f0f0f0;
+	position: relative;
+	padding-top: 85px;
+	.navBar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		z-index: 1000;
+		div[class^="am-navbar-title"]{
+			color: #333;
+		}
+		i{
+			font-size: 20px;
+		}
+	}
+	div[class^="am-tabs-tab-bar-wrap"]{
+		box-shadow: 0 0 8px -1px rgba(0,0,0,0.3);
+		margin-bottom: 8px;
+	}
+	.listCommonSelect{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 40px;
+		background: #fff;
+		position: absolute;
+		top: 45px;
+		left: 0;
+		box-shadow: 0 0 6px rgba(0,0,0,.15);
+		padding: 0 10px;
+		z-index: 999;
+		.selectList{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+			height: 40px;
+			background: #fff;
+			font-size: 15px;
+			color: #333;
+			i{
+				margin-left: 12px;
+				color: #bbb;
+			}
+		}
+	}
+	ul.content{
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		li.listView{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			padding: 14px;
+			background: #fff;
+			border-top: 1px solid #ececed;
+			border-bottom: 1px solid #ececed;
+			margin-bottom: 10px;
+			&:active{
+				opacity: 0.8;
+				background: #f4f4f4;
+			}
+			h3{
+				width: 100%;
+				font-size: 14px;
+				color: #999;
+				text-align: left;
+				line-height: 18px;
+				overflow:hidden; 
+				text-overflow:ellipsis;
+				display:-webkit-box;
+				-webkit-line-clamp:2;
+				-webkit-box-orient: vertical;
+			}
+			.listMain{
+				display: flex;
+				padding-bottom: 10px;
+				img{
+					width: 75px;
+					height: 75px;
+				}
+				.column{
+					display: flex;
+					flex-direction: column;
+					width: calc(100% - 100px);
+					margin-left: 14px;
+					p{
+						font-size: 14px;
+						color: #333;
+					}
+					.location{
+						margin-bottom: 8px;
+						font-weight: bold;
+						font-size: 13px;
+						color: #111;
+					}
+					.reporter{
+						margin-bottom: 8px;
+						font-size: 15px;
+					}
+					.reportTime{
+						color: #999;
+					}
+				}
+			}
+		}
+	}
+}

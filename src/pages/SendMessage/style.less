@@ -1,0 +1,149 @@
+.sendMessage{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	padding-top: 45px;
+	.navBar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		box-shadow: 0 0 6px rgba(0,0,0,.15);
+		div[class^="am-navbar-title"]{
+			color: #333;
+		}
+		i{
+			font-size: 20px;
+		}
+	}
+	.wrapper{
+		width: 100%;
+		min-height: 100%;
+		overflow-y: scroll;
+		padding: 0 10px;
+		display: flex;
+		flex-direction: column;
+		.addressee{
+			display: flex;
+			align-items: center;
+			padding-top: 20px;
+			margin-bottom: 10px;
+			h3{
+				width: 70px;
+			}
+			.contacts{
+				width: calc(100% - 70px);
+				min-height: 36px;
+				border-bottom: 1px solid #eee;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+			i[class='iconfont icon-tongxunlu']{
+				font-size: 20px;
+				color: #666;
+			}
+		}
+		.contents{
+			div[class^='am-textarea-control']{
+				background: #f7f7f7;
+			}
+			textarea{
+				padding: 0 10px;
+			}
+		}
+		.sendOutBtn{
+			padding: 0 20px;
+			margin-top: 40px;
+		}
+	}
+	.contactsPopup{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #f7f7f7;
+		z-index: 120;
+		display: none;
+		.top{
+			width: 100%;
+			padding: 20px;
+			background: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			i{
+				font-size: 20px;
+				color: #333;
+			}
+			h3{
+				font-size: 15px;
+				color: #111;
+				width: 100%;
+				text-align: center;
+			}
+		}
+		.contactsList{
+			width: 100%;
+			height: 100%;
+			padding-bottom: 62px;
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
+			overflow-scrolling: touch;
+			div[class="am-list-thumb"]{
+				width: 10px;
+				height: 0;
+			}
+			span[class="am-checkbox-inner"]{
+				left: auto !important;
+				right: 20px;
+			}
+			p.title{
+				width: 100%;
+				padding: 15px 0 6px 12px;
+				color: #999;
+				font-size: 14px;
+				display: flex;
+				align-items: center;
+			}
+			.describe{
+				display: flex;
+				align-items: center;
+				width: 100%;
+				h3{
+					font-size: 16px;
+					color: #111;
+				}
+				span{
+					font-size: 10px;
+					color: #fe943e;
+					margin-left: 10px;
+					padding: 2px 4px;
+					border: 1px solid #fe943e;
+					border-radius: 4px;
+				}
+			}
+		}
+	}
+	div[class^='am-list-item']{
+		padding-left: 0;
+		padding-bottom: 0;
+	}
+	div[class^='am-tag']{
+	  padding: 0 4px;
+	  margin-right: 8px;
+	  margin-bottom: 8px;
+	  svg{
+	  	width: 14px !important;
+    	height: 14px !important;
+	  }
+	}
+	.isShowPopup{
+		display: block;
+	}
+}

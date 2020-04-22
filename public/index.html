@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,viewport-fit=cover"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_971338_cfg4yf9m2c.css">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<!-- 高德地图 -->
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./js/cordovaEvent.js"></script>
+	<script src="https://webapi.amap.com/maps?v=1.4.15&key=9502be4076a66142d4335dc088a93132&plugin=AMap.MouseTool,ElasticMarker&plugin=AMap.Geocoder&plugin=AMap.Polygon&plugin=AMap.DistrictSearch&plugin=AMap.PolyEditor"></script>
+	
+</head>
+<style type="text/css">
+	.amap-marker-label{
+		border: 0 !important;
+		background-color: transparent !important;
+	}
+</style>
+<body onload="onLoad()">
+	<div id="root"></div>
+	<div id="ajaxLoading">
+		<div id="ajaxLoadingMain">
+			<div class="loader-inner line-scale-pulse-out">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<p>数据加载中</p>
+		</div>
+	</div>
+	<div id="exitApp">再按一次退出程序</div>
+</body>
+</html>

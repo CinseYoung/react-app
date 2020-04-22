@@ -1,0 +1,118 @@
+@color: #4287ff;
+.main{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+	.grossData{
+		position: absolute;
+		bottom: 16px;
+		left: 50%;
+		z-index: 5;
+		width: 110px;
+		height: 40px;
+		border-radius: 20px;
+		background: @color;
+		color: #fff;
+		margin-left: -55px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 15px;
+		box-shadow: 0 1.067vw 1.6vw 0 rgba(66,135,255,.4);
+		i{
+			font-size: 20px;
+			margin-right: 4px;
+		}
+		&:active{
+			box-shadow: none;
+		}
+	}
+	.telColumn{
+		position: absolute;
+		left: 10px;
+		top: 148px;
+		width: 40px;
+		height: 40px;
+		background: rgba(0,0,0,0.4);
+		border-radius: 2px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		box-shadow: 0 0 6px rgba(0,0,0,.25);
+		i{
+			font-size: 19px;
+		}
+		em{
+			font-size: 10px;
+		}
+		&:active{
+			color: #4287ff !important;
+			background: #deedff;
+			opacity: 0.7;
+			i,em{
+				color: #4287ff !important;
+			}
+		}
+	}
+	.approval{
+		position: absolute;
+		left: 10px;
+		top: 196px;
+		width: 40px;
+		height: 40px;
+		background: rgba(0,0,0,0.4);
+		border-radius: 2px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		box-shadow: 0 0 6px rgba(0,0,0,.25);
+		i{
+			font-size: 19px;
+		}
+		em{
+			font-size: 10px;
+		}
+		&:active{
+			color: #4287ff !important;
+			background: #deedff;
+			opacity: 0.7;
+			i,em{
+				color: #4287ff !important;
+			}
+		}
+	}
+	.info{
+		position: absolute;
+		left: 10px;
+		top: 100px;
+		width: 40px;
+		height: 40px;
+		border-radius: 2px;
+		background: rgba(0,0,0,0.4);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		color: #fff;
+		box-shadow: 0 0 6px rgba(0,0,0,.25);
+		i{
+			font-size: 19px;
+		}
+		em{
+			font-size: 10px;
+		}
+		&:active{
+			color: #4287ff !important;
+			background: #deedff;
+			opacity: 0.7;
+			i,em{
+				color: #4287ff !important;
+			}
+		}
+	}
+}

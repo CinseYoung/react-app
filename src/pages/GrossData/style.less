@@ -1,0 +1,189 @@
+.grossData{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	padding-top: 45px;
+	.navBar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		// box-shadow: 0 0 6px rgba(0,0,0,.15);
+		div[class^="am-navbar-title"]{
+			color: #333;
+		}
+		i{
+			font-size: 20px;
+		}
+	}
+	div[class^="am-tabs-tab-bar-wrap"]{
+		box-shadow: 0 0 8px -1px rgba(0,0,0,0.3);
+		margin-bottom: 8px;
+	}
+	.main{
+		background: #fefefe;
+		width: 100%;
+		height: 100%;
+		.dataList{
+			width: 100%;
+			background: #fefefe;
+			.titleListDiv{
+				height:37px;
+				position: relative;
+			}
+			.titleList{
+				width: 100%;
+				padding: 0 8px 0 8px;
+				height:37px;
+				border-bottom: 1px solid #eee;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				color: #666;
+				font-size: 13px;
+				position: fixed;
+				top: 0;
+				background: #fff;
+				li{
+					padding: 10px 0 8px 0;
+					text-align: center;
+					&.watername{
+						min-width: 20%;
+						text-align: left;
+					}
+					&.watertime{
+						width: 50%;
+						text-align: center;
+					}
+					&.waterlevel{
+						width: 20%;
+						text-align: center;
+					}
+					&.watertrend{
+						width: 10%;
+						text-align: center;
+					}
+					&.zhname{
+						width: 30%;
+						text-align: left;
+					}
+					&.zhtime{
+						width: 22%;
+						text-align: center;
+					}
+					&.zhlevel{
+						width: 17%;
+						text-align: center;
+					}
+					&.zhtrend{
+						width: 8%;
+						text-align: center;
+					}
+					&.name{
+						min-width: 20%;
+						text-align: left;
+					}
+					&.ylname{
+						min-width: 28%;
+						text-align: left;
+					}
+					&.time{
+						width: 50%;
+						font-size: 14px;
+						text-align: center;
+					}
+					&.level{
+						width: 20%;
+						text-align: center;
+					}
+					&.trend{
+						width: 13%;
+						text-align: center;
+					}
+				}
+
+			}
+			.listMain{
+				width: 100%;
+				overflow-y: auto;
+				-webkit-overflow-scrolling: touch;
+    			overflow-scrolling: touch;
+				.listItem{
+					width: 100%;
+					padding: 0 8px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					border-bottom: 1px solid #eee;
+					li{
+						padding: 10px 0 8px 0;
+						color: #333;
+						font-size: 15px;
+						text-align: center;
+						&.watername{
+							min-width: 20%;
+							text-align: left;
+						}
+						&.watertime{
+							width: 50%;
+							text-align: center;
+						}
+						&.waterlevel{
+							width: 20%;
+							text-align: center;
+						}
+						&.watertrend{
+							width: 10%;
+							text-align: center;
+						}
+						&.zhname{
+							width: 30%;
+							text-align: left;
+						}
+						&.zhtime{
+							width: 22%;
+							text-align: center;
+						}
+						&.zhlevel{
+							width: 17%;
+							text-align: center;
+						}
+						&.zhtrend{
+							width: 8%;
+							text-align: center;
+						}
+						&.name{
+							min-width: 20%;
+							text-align: left;
+						}
+						&.ylname{
+							min-width: 28%;
+							text-align: left;
+						}
+						&.time{
+							width: 50%;
+							font-size: 14px;
+							text-align: center;
+						}
+						&.level{
+							width: 20%;
+							text-align: center;
+						}
+						&.trend{
+							width: 13%;
+							text-align: center;
+						}
+					}
+
+
+				}
+			}
+		}
+	}
+	i[class^="iconfont icon-icondown"]{font-size: 18px;color: #4caf50;}
+	i[class^="iconfont icon-iconup"]{font-size: 18px;color: #f44336;}
+	i[class^="iconfont icon-shuiping"]{font-size: 18px;color: #9e9e9e;}
+}

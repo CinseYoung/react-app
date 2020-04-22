@@ -1,0 +1,133 @@
+.taskDetails{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #f0f0f0;
+	position: relative;
+	padding-top: 45px;
+	.navBar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		div[class^="am-navbar-title"]{
+			color: #333;
+		}
+		i{
+			font-size: 20px;
+		}
+	}
+	div[class^="am-tabs-tab-bar-wrap"]{
+		box-shadow: 0 0 8px -1px rgba(0,0,0,0.3);
+		margin-bottom: 8px;
+	}
+	.AMaps{
+		width: 100%;
+		height: 100%;
+	}
+	.startTask{
+		position: absolute;
+		left: 0;
+		bottom: 16px;
+		width: 100%;
+		height: 44px;
+		border-radius: 10px 10px 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.beginToContinue{
+			display: none;
+			width: 80%;
+			height: 100%;
+			.startTaskBtn{
+				width: 100%;
+				height: 100%;
+				font-size: 16px;
+				letter-spacing: 2px;
+				border-radius: 6px;
+				color: #fff;
+				border: transparent;
+				display: none;
+				align-items: center;
+				justify-content: center;
+				&:active{
+					opacity: 0.8;
+				}
+			}
+			.continueTaskBtn{
+				width: 100%;
+				height: 100%;
+				font-size: 16px;
+				letter-spacing: 2px;
+				border-radius: 6px;
+				color: #fff;
+				border: transparent;
+				display: none;
+				align-items: center;
+				justify-content: center;
+				&:active{
+					opacity: 0.8;
+				}
+			}
+		}
+		.suspendExecution{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 90%;
+			height: 100%;
+			display: none;
+			.suspendBtn,.endTaskBtn{
+				width: 47%;
+				height: 100%;
+				font-size: 16px;
+				letter-spacing: 2px;
+				border-radius: 6px;
+				color: #fff;
+				border: transparent;
+				&:active{
+					opacity: 0.8;
+				}
+			}
+		}
+		
+		.startTaskBtn{
+			background: #17c13d;
+			box-shadow: 0 0 10px rgba(8, 173, 36,0.8);
+		}
+		.continueTaskBtn{
+			background: #17c13d;
+			box-shadow: 0 0 10px rgba(8, 173, 36,0.8);
+		}
+		.suspendBtn{
+			background: #409EFF;
+			box-shadow: 0 0 10px rgba(85, 125, 255,0.8);
+		}
+		.endTaskBtn{
+			background: #ff5555;
+			box-shadow: 0 0 10px rgba(255, 85, 85,0.8);
+		}
+		.isStart,.isContinue{display: flex !important;}
+	}
+	.feedba{
+		position: absolute;
+		top: 15%;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(13, 107, 204,0.2);
+		&:active{
+			background: #e8f6ff;
+		}
+		i{
+			font-size: 22px;
+			color: #666;
+		}
+	}
+}

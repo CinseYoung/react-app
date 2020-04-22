@@ -1,0 +1,19 @@
+{
+   "scope": "/",// 设置 PWA 的作用域
+   "name": "Beed for React", // 用作当用户被提示安装应用时出现的文本
+   "short_name": "Beed", // 用作当应用安装后出现在用户主屏幕上的文本
+   "start_url": "/", // 打开后第一个出现的页面地址
+   "display": "standalone", // 定义应用的显示方式
+   "description": "Beed", // 参考 meta 中的 description
+   "orientation": "natural", // 定义默认应用显示方向，竖屏、横屏
+   "prefer_related_applications": false, // 是否设置对应应用
+   "theme_color": "#ff7000", // 主题颜色，用于控制浏览器地址栏着色
+   "background_color": "#ff7000", //  应用加载之前的背景色，用于应用启动时的过渡
+   "icons": [ // 定义不同尺寸的图标，最终会根据应用场景选择合适大小的图标
+      {
+         "src": "./images/logo_144.png",
+         "sizes": "144x144",
+         "type": "image/png" // 非必填
+      }
+   ]
+}

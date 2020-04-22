@@ -1,0 +1,40 @@
+.scale{
+	position: absolute;
+	right: 10px;
+	top: 430px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	width: 40px;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+	border-radius: 2px;
+	span{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		padding-top: 8px;
+		padding-bottom: 4px;
+		font-size: 14px;
+		color: #666;
+		overflow: hidden;
+		i{
+			color: #777;
+			font-size: 22px;
+		}
+		&:active{
+			color: #4287ff !important;
+			background: #deedff;
+			i{
+				color: #4287ff !important;
+			}
+		}
+	}
+	span:last-child{
+		border-bottom: none;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+}

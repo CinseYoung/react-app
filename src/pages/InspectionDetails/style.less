@@ -1,0 +1,159 @@
+.inspectionDetails{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+	.content{
+		width: 100%;
+		overflow-y: auto;
+		position: relative;
+		-webkit-overflow-scrolling: touch;
+    	overflow-scrolling: touch;
+	}
+	.navBarMain{
+		width: 100%;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		box-shadow: 0 0 6px rgba(0,0,0,.15);
+		.navBar{
+			div[class^="am-navbar-title"]{
+				color: #333;
+			}
+			i{
+				font-size: 20px;
+			}
+		}
+	}
+	.goBack{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 30;
+		padding: 0 10px;
+		width: 100%;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		span{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 26px;
+			height: 26px;
+			background: rgba(0,0,0,0.4);
+			border-radius: 50%;
+			overflow: hidden;
+			i{
+				font-size: 14px;
+				color: #fff;
+				font-weight: normal;
+				margin-left: -2px;
+			}
+		}
+	}
+	.detailsList{
+		width: 100%;
+		background: #fff;
+		padding: 10px 10px 6px 10px;
+		.listItem{
+			width: 100%;
+			display: flex;
+			font-size: 14px;
+			color: #333;
+			margin-bottom: 12px;
+			span{
+				display: inline-block;
+				width: 70px;
+				color: #999;
+			}
+			em{
+				display: inline-block;
+				width: 250px;
+			}
+			.icon{
+				transform: rotate(20deg);
+				i{
+					font-size: 20px;
+				}
+				i[class^="iconfont icon-daichuli"]{
+					color: #eca725;
+				}
+				i[class^="iconfont icon-chuli"]{
+					color: #349ce8;
+				}
+				i[class^="iconfont icon-yichuli"]{
+					color: #339603;
+				}
+			}
+		}
+	}
+	.grayBar{
+		width: 100%;
+		height: 10px;
+		background: #f0f0f0;
+		margin-bottom: 10px;
+	}
+	.stepsTitle{
+		font-size: 15px;
+		font-weight: bold;
+		color: #333;
+	}
+	.stepsText{
+		font-size: 14px;
+		color: #878787;
+	}
+	.processedText{
+		font-size: 14px;
+		color: #878787;
+	}
+	.stepsButton{
+		display: flex;
+		align-items: center;
+		font-size: 13px;
+		color: #666;
+		button{
+			width: 80px;
+			height: 30px;
+			background: #4285f4;
+			border: transparent;
+			color: #fff;
+			font-size: 13px;
+			border-radius: 4px;
+			margin-right: 10px;
+			&:active{
+				opacity: 0.8;
+			}
+		}
+	}
+	.processed{
+		textarea{
+			color: #878787 !important;
+			background: #fff !important;
+			padding: 0px !important;
+		}
+		span[class^="am-textarea-count"]{
+			display: none;
+		}
+		.stepsButton{
+			display: none;
+		}
+	}
+	div[class^="am-list-item"]{
+		padding-left: 0;
+		textarea{
+			font-size: 14px;
+			color: #333;
+			background: #f2f2f2;
+			padding: 6px;
+		}
+	}
+	.hide{
+		display: none;
+	}
+}

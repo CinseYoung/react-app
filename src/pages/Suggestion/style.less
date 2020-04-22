@@ -1,0 +1,40 @@
+.suggestion{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #f0f0f0;
+	position: relative;
+	padding-top: 45px;
+	.navBar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		box-shadow: 0 0 6px rgba(0,0,0,.15);
+		div[class^="am-navbar-title"]{
+			color: #333;
+		}
+		i{
+			font-size: 20px;
+		}
+	}
+	div[class^='am-image-picker-item am-image-picker-upload-btn']:after{
+		content: ''
+	}
+	button.button{
+		width: 84%;
+		height: 42px;
+		background-image: -webkit-linear-gradient(0deg,#5392ff,#307cff);
+		border-radius: 6px;
+		border: transparent;
+		color: #fff;
+		font-size: 15px;
+		margin-left: 8%;
+		margin-top: 90px;
+		margin-bottom: 20px;
+		&:active{
+			opacity: 0.8;
+		}
+	}
+}
